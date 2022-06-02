@@ -6,4 +6,9 @@ function createPhrases() {
     }
 }
 
-createPhrases();
+
+const anonima = function(num1, num2){
+    sum = num1 + num2;
+    return console.log(sum);
+}
+anonima(2, 3);
