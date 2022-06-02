@@ -46,20 +46,10 @@ class Repository{
     }
 }
 
-
-
-
-
-
-
-
-
-
+p2 = new Pessoa('Rubens', '24');
 p1 = new Pessoa('Guilherme', '23');
 pc = new Controller;
 
-p1.setNome('Guilherme Gonçalves')
-
+pc.registerController(p2);
 pc.registerController(p1);
 pc.listarController();
-
