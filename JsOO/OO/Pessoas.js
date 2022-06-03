@@ -1,5 +1,28 @@
-class Pessoa{
+class endereco{
+    constructor(rua, numero){
+        this.rua = rua;
+        this.numero = numero;
+    }
+
+    getRua(){
+        return this.rua
+    }
+    setRua(rua){
+        this.rua = rua;
+    }
+
+    getNumero(){
+        return this.numero;
+    }
+
+    setNumero(numero){
+        this.numero = numero;
+    }
+}
+
+class Pessoa extends endereco{
     constructor(nome, idade) {
+        super();
         this.nome = nome;
         this.idade = idade;
     }
@@ -46,9 +69,12 @@ class Repository{
     }
 }
 
-p2 = new Pessoa('Rubens', '24');
+p2 = new Pessoa('Rubens', 24);
 p1 = new Pessoa('Guilherme', '23');
 pc = new Controller;
+
+p1.setNumero(316);
+p1.setRua('Pedro Lopes');
 
 pc.registerController(p2);
 pc.registerController(p1);
